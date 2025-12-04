@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 6b7615cecb248d6428b73280032b1caf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2773695717302117725
+    second: HalfHeartItem_0
+  - first:
+      213: 6848527115403332661
+    second: HalfHeartItem_1
+  - first:
+      213: 2417233721044667527
+    second: HalfHeartItem_2
+  - first:
+      213: 3115913351527114228
+    second: HalfHeartItem_3
+  - first:
+      213: -4083135987837245874
+    second: HalfHeartItem_4
+  - first:
+      213: 1481225896966431308
+    second: HalfHeartItem_5
+  - first:
+      213: 3896830457125865364
+    second: HalfHeartItem_6
+  - first:
+      213: -4724627647872041836
+    second: HalfHeartItem_7
+  - first:
+      213: -534364158892037857
+    second: HalfHeartItem_8
+  - first:
+      213: -4345708409852938727
+    second: HalfHeartItem_9
+  - first:
+      213: 782548433345855770
+    second: HalfHeartItem_10
+  - first:
+      213: 6785616106049818090
+    second: HalfHeartItem_11
+  - first:
+      213: 8409626703295460539
+    second: HalfHeartItem_12
+  - first:
+      213: -9218170413680131715
+    second: HalfHeartItem_13
+  - first:
+      213: 1861455478742150658
+    second: HalfHeartItem_14
+  - first:
+      213: 8820639061964167585
+    second: HalfHeartItem_15
+  - first:
+      213: -390376099756730491
+    second: HalfHeartItem_16
+  - first:
+      213: 8416364249630949303
+    second: HalfHeartItem_17
+  - first:
+      213: 3544983189107161282
+    second: HalfHeartItem_18
+  - first:
+      213: 4640952985379219029
+    second: HalfHeartItem_19
+  - first:
+      213: -4410010853780025202
+    second: HalfHeartItem_20
+  - first:
+      213: 4870492890752206145
+    second: HalfHeartItem_21
+  - first:
+      213: -3982425133391492061
+    second: HalfHeartItem_22
+  - first:
+      213: 2800661075980618454
+    second: HalfHeartItem_23
+  - first:
+      213: -4152457562041034025
+    second: HalfHeartItem_24
+  - first:
+      213: -4367967277773930257
+    second: HalfHeartItem_25
+  - first:
+      213: 5772603257028481290
+    second: HalfHeartItem_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HalfHeartItem_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 671
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55a0d82f852e7620800000000000000
+      internalID: 2773695717302117725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 663
+        width: 46
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c0f3c502bda0f50800000000000000
+      internalID: 6848527115403332661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 659
+        width: 46
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c86f1234dbb8120800000000000000
+      internalID: 2417233721044667527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 663
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5aba43fa2fd3b20800000000000000
+      internalID: 3115913351527114228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_4
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 659
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46e853d379c557c0800000000000000
+      internalID: -4083135987837245874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 527
+        width: 24
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c422bccfa1f5e8410800000000000000
+      internalID: 1481225896966431308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_6
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 523
+        width: 15
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49709ea87a2541630800000000000000
+      internalID: 3896830457125865364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_7
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 523
+        width: 15
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49cf898bf20ce6eb0800000000000000
+      internalID: -4724627647872041836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_8
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 527
+        width: 24
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f192a80f0ae8598f0800000000000000
+      internalID: -534364158892037857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_9
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 531
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916b94dc931f0b3c0800000000000000
+      internalID: -4345708409852938727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 407
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a114e1d67ab2cda00800000000000000
+      internalID: 782548433345855770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 403
+        width: 46
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedc44f85e95b2e50800000000000000
+      internalID: 6785616106049818090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_12
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 407
+        width: 46
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4b0973eeef4b470800000000000000
+      internalID: 8409626703295460539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_13
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 415
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71849549da721080800000000000000
+      internalID: -9218170413680131715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_14
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 407
+        width: 46
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e61af35e735d910800000000000000
+      internalID: 1861455478742150658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_15
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 275
+        width: 46
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a91f4c3e74396a70800000000000000
+      internalID: 8820639061964167585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_16
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 279
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587923d610b159af0800000000000000
+      internalID: -390376099756730491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_17
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 275
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfbc8771beecc470800000000000000
+      internalID: 8416364249630949303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_18
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 271
+        width: 24
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8b679ad6f423130800000000000000
+      internalID: 3544983189107161282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_19
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 267
+        width: 15
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55621d0c62af76040800000000000000
+      internalID: 4640952985379219029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_20
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 139
+        width: 15
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8013d46e7e7cc2c0800000000000000
+      internalID: -4410010853780025202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_21
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 143
+        width: 24
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145c95aaa77779340800000000000000
+      internalID: 4870492890752206145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_22
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 147
+        width: 30
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ccc93e0759bb8c0800000000000000
+      internalID: -3982425133391492061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_23
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 151
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da861af862fdd620800000000000000
+      internalID: 2800661075980618454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_24
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 147
+        width: 46
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dad8a519d18f56c0800000000000000
+      internalID: -4152457562041034025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_25
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 23
+        width: 46
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe041c147ecd163c0800000000000000
+      internalID: -4367967277773930257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalfHeartItem_26
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 31
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a011274e3186c1050800000000000000
+      internalID: 5772603257028481290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HalfHeartItem_0: 2773695717302117725
+      HalfHeartItem_1: 6848527115403332661
+      HalfHeartItem_10: 782548433345855770
+      HalfHeartItem_11: 6785616106049818090
+      HalfHeartItem_12: 8409626703295460539
+      HalfHeartItem_13: -9218170413680131715
+      HalfHeartItem_14: 1861455478742150658
+      HalfHeartItem_15: 8820639061964167585
+      HalfHeartItem_16: -390376099756730491
+      HalfHeartItem_17: 8416364249630949303
+      HalfHeartItem_18: 3544983189107161282
+      HalfHeartItem_19: 4640952985379219029
+      HalfHeartItem_2: 2417233721044667527
+      HalfHeartItem_20: -4410010853780025202
+      HalfHeartItem_21: 4870492890752206145
+      HalfHeartItem_22: -3982425133391492061
+      HalfHeartItem_23: 2800661075980618454
+      HalfHeartItem_24: -4152457562041034025
+      HalfHeartItem_25: -4367967277773930257
+      HalfHeartItem_26: 5772603257028481290
+      HalfHeartItem_3: 3115913351527114228
+      HalfHeartItem_4: -4083135987837245874
+      HalfHeartItem_5: 1481225896966431308
+      HalfHeartItem_6: 3896830457125865364
+      HalfHeartItem_7: -4724627647872041836
+      HalfHeartItem_8: -534364158892037857
+      HalfHeartItem_9: -4345708409852938727
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -37,7 +37,7 @@ public class HUD : MonoBehaviour
     }
 
     public void Damaged() {
-        int temp = FindLast() -1;
+        int temp = FindLastNull() -1;
         
         switch (hp[temp]) {
             case 4:
@@ -67,21 +67,40 @@ public class HUD : MonoBehaviour
         UpdateHP();
     }
     public void HealFull() {
-        int i = 0;
-        while (hp[i] == 3) {
-            i++;
+        if (!IsFullHP()) {
+            int i = 0;
+            while (hp[i] == 3) {
+                i++;
+            }
+            hp[i] = 3;
+            if (hp[i + 1] == 1) {
+                hp[i + 1] = 2;
+            }
+            UpdateHP();
         }
-        hp[i] = 3;
-        if (hp[i+1] == 1) {
-            hp[i+1] = 2;
-        }
-        UpdateHP();
     }
     public void HealComplete() {
         for (int i = 0; i < 10; i++) {
             if (hp[i] == 1 || hp[i] == 2) {
                 hp[i] = 3;
             }
+        }
+        UpdateHP();
+    }
+    public void IncreaseHP() {
+        if (!IsMaxHP()) {
+            int i = FindLastHeart();
+            if (hp[i] == 4 && !IsFullSlots()) {
+                hp[FindLastNull()] = 4;
+            }
+            hp[i] = 1;
+            HealFull();
+        }
+        UpdateHP();
+    }
+    public void AddShield() {
+        if (!IsFullSlots()) {
+            hp[FindLastNull()] = 4;
         }
         UpdateHP();
     }
@@ -115,7 +134,7 @@ public class HUD : MonoBehaviour
     }
 
     //Finds the first null position in the 2D array
-    private int FindLast() {
+    private int FindLastNull() {
         for (int i = 0; i < 10; i++) {
                if (hp[i] == 0) { 
                     return i;
@@ -123,11 +142,20 @@ public class HUD : MonoBehaviour
         }
         return 9;
     }
+    //Finds the last non heart position in the 2D array
+    private int FindLastHeart() {
+        for (int i = 0; i < 10; i++) {
+            if (hp[i] == 0 || hp[i] == 4) {
+                return i;
+            }
+        }
+        return 9;
+    }
     private void Death() {
 
     }
     public bool IsFullHP() {
-        int temp = FindLast() - 1;
+        int temp = FindLastNull() - 1;
         
         if (hp[temp] == 4) {
             while (hp[temp] == 4) {
@@ -138,5 +166,21 @@ public class HUD : MonoBehaviour
         } else {
             return false;
         }
+    }
+    public bool IsFullSlots() {
+        for (int i = 0;i < 10;i++) {
+            if (hp[i] == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public bool IsMaxHP() {
+        for (int i = 0; i < 10; i++) {
+            if (hp[i] == 0 || hp[i] == 4) {
+                return false;
+            }
+        }
+        return true;
     }
 }
