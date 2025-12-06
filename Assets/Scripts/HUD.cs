@@ -18,6 +18,10 @@ public class HUD : MonoBehaviour
 
     public GameObject[] slotArray;
 
+    public GameObject deathMenu;
+    public GameObject player;
+    private bool isPaused;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
         //Sets everything to null
@@ -28,11 +32,23 @@ public class HUD : MonoBehaviour
         hp[0] = 3;
         hp[1] = 3;
         hp[2] = 3;
-        UpdateHP(); 
+        UpdateHP();
+        isPaused = false;
     }
 
     // Update is called once per frame
     void Update() {
+        if (Input.GetButtonDown("Cancel")) {
+            if (isPaused) {
+                isPaused = false;
+                player.SetActive(true);
+                gameObject.GetComponent<Buttons>().MenuResume();
+            } else {
+                player.SetActive(false);
+                gameObject.GetComponent<Buttons>().MenuPause();
+                isPaused = true;
+            }
+        }
         
     }
 
@@ -152,7 +168,8 @@ public class HUD : MonoBehaviour
         return 9;
     }
     private void Death() {
-
+        player.SetActive(false);
+        deathMenu.SetActive(true);
     }
     public bool IsFullHP() {
         int temp = FindLastNull() - 1;
