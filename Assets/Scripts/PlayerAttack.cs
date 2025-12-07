@@ -3,7 +3,7 @@ using UnityEngine.InputSystem.HID;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public bool isAttacking;
+    
     public int damage;
 
     private bool hasHit = false;
@@ -26,7 +26,7 @@ public class PlayerAttack : MonoBehaviour
             hasHit = true;
             hitCooldown = 1f;
 
-            var enemy = other.GetComponent<Enemies>();
+            var enemy = other.GetComponentInParent<Enemies>();
             if (damage > 0)
                 enemy.DamageEnemy(damage);
             else
@@ -40,7 +40,7 @@ public class PlayerAttack : MonoBehaviour
     //        hasHit = true;
     //        hitCooldown = 0.5f;
 
-    //        var enemy = other.GetComponent<Enemies>();
+    //        var enemy = other.GetComponentInParent<Enemies>();
     //        if (damage > 0)
     //            enemy.DamageEnemy(damage);
     //        else

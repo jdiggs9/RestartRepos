@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06f275a82ecf5142b76cab51af831c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemies
-  moveSpeed: 15
+  moveSpeed: 7
   maxDisMoved: 11
   minDisMoved: 3
   lineOfSight: 5
@@ -255,18 +255,18 @@ MonoBehaviour:
   hitBox: {fileID: 8134911896266080753}
   hp: 10
   items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1589191346465832091, guid: 1c31e97c5d38fb944ab6d02fc9abcafa, type: 3}
+  - {fileID: 1589191346465832091, guid: 1c31e97c5d38fb944ab6d02fc9abcafa, type: 3}
+  - {fileID: 8980469880244808450, guid: 70a33a9f4a746034a9d255c2625bd617, type: 3}
+  - {fileID: 8980469880244808450, guid: 70a33a9f4a746034a9d255c2625bd617, type: 3}
+  - {fileID: 9173629598953710773, guid: 1e3da7364afa0734893a09869a947f0a, type: 3}
+  - {fileID: 9173629598953710773, guid: 1e3da7364afa0734893a09869a947f0a, type: 3}
+  - {fileID: 3743072770798536060, guid: cf1a35771aaf5984e9b83d80217c284d, type: 3}
+  - {fileID: 1661322964236777232, guid: 3b9de12ea3aaa754dbe1f620ffd24357, type: 3}
+  - {fileID: 5017092840092807513, guid: b83799566d499234883cda7f91141f30, type: 3}
+  - {fileID: 5017092840092807513, guid: b83799566d499234883cda7f91141f30, type: 3}
+  - {fileID: 5017092840092807513, guid: b83799566d499234883cda7f91141f30, type: 3}
+  - {fileID: 5017092840092807513, guid: b83799566d499234883cda7f91141f30, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -371,7 +371,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}

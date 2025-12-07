@@ -53,7 +53,7 @@ public class Element : MonoBehaviour
         if (!earth) yield break;
 
         earthSpike.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         earthSpike.SetActive(false);
         yield return new WaitForSeconds(10f);
     }
@@ -95,7 +95,7 @@ public class Element : MonoBehaviour
 
         earthWallHB.SetActive(true);
         earthWall.SetActive(true);
-
+        
         // move forward over time
         float t = 0;
         while (t < 1f)

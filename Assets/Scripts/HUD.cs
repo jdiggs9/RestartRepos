@@ -38,6 +38,7 @@ public class HUD : MonoBehaviour
         UpdateHP();
         isPaused = false;
         UpdateDisplay();
+        //DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
