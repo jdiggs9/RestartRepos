@@ -6,6 +6,8 @@ public class NextLevel : MonoBehaviour
 {
     private int currentSceneIndex;
     private int nextSceneIndex;
+    public bool isLast;
+    public GameObject winMenu;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,7 +23,12 @@ public class NextLevel : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-        SceneManager.LoadScene(nextSceneIndex);
+        if (!isLast)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        } else
+        {
+            winMenu.SetActive(true);
+        }
     }
 }
