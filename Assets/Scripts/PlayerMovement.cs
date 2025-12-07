@@ -21,11 +21,13 @@ public class Player_Movement : MonoBehaviour
     public LayerMask wallLayer;
 
     private float horizontal;
-    private bool isFacingRight;
+    public bool isFacingRight;
     private bool isWallSlide;
     private bool isWallJump;
     private float wallJumpDirection;
     private float wallJumpCount;
+
+    public bool isHit;
 
 
 
@@ -50,13 +52,14 @@ public class Player_Movement : MonoBehaviour
     private void inputControl()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Jump") && IsGrounded())
-        {
-            playerRB.linearVelocity = new Vector2(playerRB.linearVelocity.x, jumpPower);
-        }
-        if (Input.GetButtonDown("Jump") && playerRB.linearVelocity.y > 0f)
-        {
-            playerRB.linearVelocity = new Vector2(playerRB.linearVelocity.x, playerRB.linearVelocity.y * 0.5f);
+        if (!isHit) {
+            if (Input.GetButtonDown("Jump") && IsGrounded()) {
+                playerRB.linearVelocity = new Vector2(playerRB.linearVelocity.x, jumpPower);
+            } if (Input.GetButtonDown("Jump") && playerRB.linearVelocity.y > 0f) {
+                playerRB.linearVelocity = new Vector2(playerRB.linearVelocity.x, playerRB.linearVelocity.y * 0.5f);
+            }
+        } else if (IsGrounded()) {
+            isHit = false;
         }
     }
     private void FixedUpdate()
@@ -83,7 +86,7 @@ public class Player_Movement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }

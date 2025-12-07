@@ -1,11 +1,12 @@
 using System.Collections;
 using NUnit.Framework;
+using TMPro;
 using UnityEngine;
 
 public class HUD : MonoBehaviour
 {
 
-    private float[] hp = new float[10];
+    public float[] hp = new float[10];
 
     public Sprite full;
     public RuntimeAnimatorController fullAni;
@@ -20,7 +21,9 @@ public class HUD : MonoBehaviour
 
     public GameObject deathMenu;
     public GameObject player;
+    public TextMeshProUGUI coinDisplay;
     private bool isPaused;
+    public int coins = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
@@ -34,6 +37,7 @@ public class HUD : MonoBehaviour
         hp[2] = 3;
         UpdateHP();
         isPaused = false;
+        UpdateDisplay();
     }
 
     // Update is called once per frame
@@ -49,7 +53,11 @@ public class HUD : MonoBehaviour
                 isPaused = true;
             }
         }
-        
+        UpdateDisplay();
+    }
+
+    private void UpdateDisplay() {
+        coinDisplay.text = coins.ToString();
     }
 
     public void Damaged() {
@@ -150,7 +158,7 @@ public class HUD : MonoBehaviour
     }
 
     //Finds the first null position in the 2D array
-    private int FindLastNull() {
+    public int FindLastNull() {
         for (int i = 0; i < 10; i++) {
                if (hp[i] == 0) { 
                     return i;

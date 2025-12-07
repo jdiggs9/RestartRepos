@@ -19,6 +19,8 @@ public class Enemies : MonoBehaviour
     public float moveDelay;
     public bool hasMeleeAttack;
     public GameObject hitBox;
+    public int hp;
+    public GameObject[] items;
 
     private float moveDir = 1f;
     private bool inLOS;
@@ -48,8 +50,9 @@ public class Enemies : MonoBehaviour
                 ChooseNewTarget();
             }
             return;
-        } if (Vector2.Distance(rb.position, player.position) < lineOfSight && !inLOS) {
+        } if (Vector2.Distance(rb.position, player.position) < lineOfSight && !inLOS && (rb.position.y < player.position.y + .7f && rb.position.y > player.position.y - .7f)) {
             inLOS = true;
+            moveSpeed *= 2;
             ChooseNewTarget();
         } if (Vector2.Distance(rb.position, player.position) < attackRange) {
             if (hasMeleeAttack) {
@@ -63,30 +66,44 @@ public class Enemies : MonoBehaviour
 
         if (Vector2.Distance(rb.position, targetPos) < 0.05f || IsDeadEnd()) {
             StopMovement();
-        } if (Vector2.Distance(rb.position, player.position) > lineOfSight) {
+        } if (Vector2.Distance(rb.position, player.position) > lineOfSight && inLOS) {
             inLOS = false;
+            moveSpeed /= 2;
         }
     }
 
     public void MeleeAttack() {
         ani.SetBool("Attack", true);
         hitBox.GetComponent<Attack>().isAttacking = true;
+        hitBox.GetComponent<Attack>().moveDir = moveDir;
     }
     public void RangedAttack() {
 
     }
 
-    private void StopMovement() {
+    public void StopMovement() {
         isMoving = false;
-        pauseTimer = moveDelay;
-        RandomizeDir();
+        if (!inLOS) {
+            pauseTimer = moveDelay;
+        } else {
+            pauseTimer = 0;
+        }
+            RandomizeDir();
     }
     private void ChooseNewTarget() {
         if (!inLOS) {
             float distance = Random.Range(minDisMoved, maxDisMoved);
             targetPos = new Vector3(transform.position.x + (distance * moveDir), transform.position.y, transform.position.z);
         } else {
-            targetPos = new Vector3(transform.position.x + (attackRange * moveDir), transform.position.y, transform.position.z);
+            if (player.position.x > transform.position.x)
+            {
+                moveDir = 1;
+            } else {
+                moveDir = -1;
+            } if ((moveDir > 0 && !isFacingRight) || (moveDir < 0 && isFacingRight)) {
+                Flip();
+            }
+            targetPos = new Vector3(player.position.x + (attackRange * moveDir), transform.position.y, transform.position.z);
         }
         isMoving = true;
     }
@@ -105,8 +122,8 @@ public class Enemies : MonoBehaviour
     }
 
     private bool IsDeadEnd() {
-        if (!Physics2D.Raycast(airCheck.position, transform.TransformDirection(Vector2.down), 0.5f, groundLayer, -4, -2) 
-            || Physics2D.Raycast(wallCheck.position, transform.forward, 0.5f, wallLayer, -4, -2))
+        if (!Physics2D.Raycast(airCheck.position, Vector2.down, 0.5f, groundLayer, -4, -2) 
+            || Physics2D.Raycast(wallCheck.position, transform.right * moveDir, 0.5f, wallLayer, -4, -2))
         {
             return true;
         }
@@ -118,5 +135,25 @@ public class Enemies : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.x *= -1f;
         transform.localScale = localScale;
+    }
+
+    public void DamageEnemy(int d) {
+        hp -= d;
+        if (hp <= 0) {
+            Debug.Log("Enemy killed");
+            EnemyDie();
+        }
+        Debug.Log("HP: " + hp);
+    }
+    private void EnemyDie() {
+        SpawnItem();
+        Destroy(gameObject);
+    }
+    private void SpawnItem() {
+        int i = items.Length;
+        int r = Random.Range(0, i);
+        if (items[r] != null) {
+            Instantiate(items[r], transform.position, Quaternion.identity);
+        }
     }
 }

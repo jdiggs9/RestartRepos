@@ -44,7 +44,8 @@ public class Items : MonoBehaviour
                 } else if (upgrade) {
 
                 } else if (coin) {
-
+                    hud.GetComponent<HUD>().coins++;
+                    Destroy(gameObject);
                 }
             }
         }
@@ -57,7 +58,9 @@ public class Items : MonoBehaviour
             return true;
         } else if (shield && !hud.GetComponent<HUD>().IsFullSlots()) {
             return true;
+        } else if (coin) {
+            return true;
         }
-        return false;
+            return false;
     }
 }
